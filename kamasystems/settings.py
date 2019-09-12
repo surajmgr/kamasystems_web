@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'jxdnp-_chxs_vl$75#p6uu5fjpvfs+@y-=sqnt%*18bh4-9ktz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['kamasystems.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'django.contrib.sitemaps',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -122,5 +123,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/kamasystems/kamasystems_web/static'
 MEDIA_ROUTE = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/'
