@@ -33,6 +33,8 @@ class project(models.Model):
     ss2 = models.CharField(max_length=500, blank=True)
     ss3 = models.CharField(max_length=500, blank=True)
     ss4 = models.CharField(max_length=500, blank=True)
+    site = models.CharField(max_length=500, blank=True)
+    demo_id = models.CharField(max_length=500, blank=True)
 
     def __str__(self):
         return self.title
