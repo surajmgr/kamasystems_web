@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="title" content="Kama Systems">
-  <meta name="description" content="kama system is a software company focus on cross platform apps and web apps. We agree to work with the collaboration of newbies just contact us.">
+  <meta name="title" content="Kama Systems | Official cooperative site">
+  <meta property="og:image" content="https://lh3.googleusercontent.com/-pYEIxlgQmb6gQRS4Q071N9czKS_hADnA1pNxXMCXM7ruxusQioA8MhhNzj9r3syMg=w2247-h1264-rw">
+  <meta name="description" content="Kama Systems is a software company focus on cross platform apps and web apps. We agree to work with the collaboration of newbies just contact us.">
   <meta name="language" content="English">
   <meta name="keywords" content="kamasystems, software company, programming, apps, android">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Kama Systems">
   <meta name="generator" content="Jekyll v3.8.5">
+  <meta name="google-site-verification" content="UuaZtCOXNjEODsCkGKG8qYDj0dujiSchj_tcFaN0K74" />
   <link rel='icon' href='https://lh3.googleusercontent.com/zrh9kGnjRd6vw7c6CptqoATtoeuYV9JLFLDvAGpQPI1FUshrl6d85jD7e6JOsWgniA=w144-h144-n-rw' type='image/x-icon'/ >
   <title>KamaSystems | Official cooperative site</title>
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -137,7 +137,7 @@
     <br/>
     <br/>
 
-    
+
 
     <div class="container marketing">
     <div class="text-centre"><h1 style="color: black" class="text-centre">Top projects<br></h1></div><hr/>
@@ -155,71 +155,38 @@
           <p><a class="btn btn-secondary" href="{{tprj.site}}" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         {% endfor %}
-        
+
       </div><!-- /.row -->
 
-
+ <br/>
+      <br/>
       <!-- START THE FEATURETTES -->
-
+      <h1>Involved Fields</h1>
       <hr class="featurette-divider">
       {% for featurette in ftr.all %}
       <div>
           <div class="row featurette">
-            <div class="col-md-7">
+            <div class="col-md-3">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250"
+                height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                role="img" aria-label="Placeholder: 250x250">
+                <title>{{featurette.name}}</title>
+                <rect width="100%" height="100%" fill="#fff" />
+                <image width="250" height="250" xlink:href="{{featurette.f1_img}}"></image>
+              </svg>
+            </div>
+            <div class="col-md-9">
               <h2 class="featurette-heading">{{featurette.f1_title}}<span class="text-muted">{{featurette.f1_stxt}}</span>
               </h2>
-              <p class="lead">{{featurette.f1_desc}}</p>
+              <p>{{featurette.f1_desc}}</p>
+              <p><a class="btn btn-secondary" href="{{featurette.site}}" role="button">Visit {{featurette.name}} &raquo;</a></p>
             </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                role="img" aria-label="Placeholder: 500x500">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#fff" />
-                <image width="500" height="500" xlink:href="{{featurette.f1_img}}"></image>
-              </svg>
-            </div>
-          </div>
-    
-          <hr class="featurette-divider">
-    
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">{{featurette.f2_title}}<span class="text-muted">{{featurette.f2_stxt}}</span></h2>
-              <p class="lead">{{featurette.f2_desc}}</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                role="img" aria-label="Placeholder: 500x500">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#fff" />
-                <image width="500" height="500" xlink:href="{{featurette.f2_img}}"></image>
-              </svg>
-            </div>
-          </div>
-    
-          <hr class="featurette-divider">
-    
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">{{featurette.f3_title}}<span class="text-muted">{{featurette.f3_stxt}}</span></h2>
-              <p class="lead">{{featurette.f3_desc}}</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                role="img" aria-label="Placeholder: 500x500">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#fff" />
-                <image width="500" height="500" xlink:href="{{featurette.f3_img}}"></image>
-              </svg>
-            </div>
-          </div>
-          </div>
-      {% endfor %}
-      <hr class="featurette-divider">
 
+          </div>
+
+          <hr class="featurette-divider">
+         </div>
+      {% endfor %}
       <!-- /END THE FEATURETTES -->
 
     </div><!-- /.container -->

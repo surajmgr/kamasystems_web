@@ -15,18 +15,9 @@ class featurette(models.Model):
     f1_stxt = models.CharField(max_length=300, blank=True)
     f1_desc = models.TextField(blank=True)
     f1_img = models.CharField(max_length=500, blank=True)
+    site = models.URLField(max_length=300, blank=True)
+    name = models.CharField(max_length=50, blank=True)
 
-    #featurete 2
-    f2_title = models.CharField(max_length=200, blank=True)
-    f2_stxt = models.CharField(max_length=300, blank=True)
-    f2_desc = models.TextField(blank=True)
-    f2_img = models.CharField(max_length=500, blank=True)
-
-    #featurete 3
-    f3_title = models.CharField(max_length=200, blank=True)
-    f3_stxt = models.CharField(max_length=300, blank=True)
-    f3_desc = models.TextField(blank=True)
-    f3_img = models.CharField(max_length=500, blank=True)
 
 class contact(models.Model):
     name = models.CharField(max_length=50)
